@@ -1,0 +1,115 @@
+p {
+  color: #fff;
+}
+
+.socials .social-item:nth-child(1) {
+  color: #1877f2;
+}
+
+.socials .social-item:nth-child(2) {
+  color: #1d9bf0;
+}
+
+.socials .social-item:nth-child(3) {
+  color: #0a66c2;
+}
+.socials .social-item:nth-child(4) {
+  color: #5865f2;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.footer-container {
+  background-color: var(--bg-color);
+}
+
+.sub-footer-1 {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+.footer-logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  background-image: linear-gradient(60deg, #3d6600, #bfffbf, #3d6600);
+  background-clip: text;
+  color: transparent;
+}
+
+.sub-footer-2 {
+  width: 90%;
+  margin: 1rem auto 2rem auto;
+  display: grid;
+  grid-template-areas: "1 2 3 4";
+  justify-content: space-around;
+}
+
+.sub-footer-2 p {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.bottom-footer {
+  height: 2rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -------------------------------------------- */
+
+.popup,
+.popupWindow {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.popupWindow {
+  background-color: #70ad22;
+}
+
+.close-popup {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  padding: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+.popup {
+  height: 100vh;
+  width: 100vw;
+}
+
+.popupContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #8adba2;
+  padding: 14px 28px;
+  background: rgba(116, 190, 116, 0.53);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid rgba(116, 190, 116, 0.66);
+}
+
+.popupContent h1 {
+  font-size: 3.5rem;
+}
