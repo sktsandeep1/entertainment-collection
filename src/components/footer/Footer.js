@@ -8,15 +8,15 @@ import { FaDiscord } from "react-icons/fa";
 import { GrClose } from "react-icons/gr";
 
 const Footer = () => {
-  const [popup, setPopup] = useState();
+  const [popup, setPopup] = useState(0);
 
-  const togglePopup = () => {
-    setPopup(!popup);
+  const togglePopup = (id) => {
+    setPopup(id);
   };
 
   return (
     <>
-      <div className="footer-container">
+      <div className="container">
         <div className="sub-footer-1">
           <div className="socials">
             <FaFacebookF className="social-item" />
@@ -30,33 +30,48 @@ const Footer = () => {
         </div>
 
         <div className="sub-footer-2">
-          {FooterContent.map((footerContent) => {
-            return (
-              <>
-                <div className="" onClick={togglePopup}>
-                  <p>{footerContent.title}</p>
-                </div>
-
-                {popup && (
-                  <div className="popup">
-                    <div className="popupWindow"></div>
-                    <div className="popupContent">
-                      <h1>{footerContent.title}</h1>
-                      <p>{footerContent.desc}</p>
-                      <button className="close-popup" onClick={togglePopup}>
-                        <GrClose />
-                      </button>
-                    </div>
+          <div className="footerItem">
+            {FooterContent.map((footerContent, index) => {
+              return (
+                <div key={index}>
+                  <div onClick={() => togglePopup(footerContent.id)}>
+                    <p>{footerContent.title}</p>
                   </div>
-                )}
-              </>
-            );
-          })}
-        </div>
 
-        <div className="bottom-footer">
-          <p> All rights has been reserved</p>
+                  {popup === footerContent.id && (
+                    <div className="popup">
+                      <div className="popupWindow"></div>
+                      <div className="popupContent">
+                        <h1>{footerContent.title}</h1>
+                        <article>{footerContent.desc}</article>
+                        <button
+                          className="close-popup"
+                          onClick={() => togglePopup(0)}
+                        >
+                          <GrClose />
+                        </button>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          <div className="websiteDetails">
+            <h1>Something about website</h1>
+            <article>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              iure fugit sunt consequatur officia sed repellendus tempora rerum
+              porro dolore quibusdam aut, iusto voluptas blanditiis odit facere
+              modi repellat perferendis totam tempore optio vitae iste.
+              Doloribus ipsum, accusamus aliquam sequi mollitia suscipit rerum
+              sunt itaque saepe, minus aliquid numquam minima?
+            </article>
+          </div>
         </div>
+      </div>{" "}
+      <div className="bottom-footer">
+        <p> All rights has been reserved</p>
       </div>
     </>
   );

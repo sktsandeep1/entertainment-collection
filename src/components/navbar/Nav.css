@@ -1,0 +1,126 @@
+.searchBar,
+.lang,
+.account {
+  color: #bfffbf;
+}
+/* ----------------------------------------------------------------------------------- */
+
+.lang p,
+.account {
+  background-image: linear-gradient(60deg, #187718, #0e0e0e, #187718);
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+.Container {
+  /* background-color: #5e9610; */
+  background-image: linear-gradient(60deg, #0e0e0e, #174417, #000000);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.nav-container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+img {
+  width: 45px;
+  height: 45px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.nav-items-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.nav-1-logo:nth-child(1) {
+  height: 46px;
+  width: 46px;
+}
+.nav-1-logo:nth-child(2) {
+  background-color: #fefefe;
+}
+.nav-1-logo:nth-child(5) {
+  height: 47px;
+  width: 47px;
+}
+
+.nav-items-2 {
+  display: flex;
+  gap: 1rem;
+}
+.nav-items-2 p {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.nav-items-2 p:hover {
+  color: #188b09;
+}
+
+.navSub,
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 5px;
+}
+
+/* .searchBar {
+} */
+.searchBar input {
+  border-radius: 30px;
+  padding: 0.5rem;
+  border: none;
+  height: 30px;
+  width: 30rem;
+  outline: none;
+  text-align: center;
+  background-image: linear-gradient(60deg, #3d6600, #bfffbf, #3d6600);
+  color: #030303;
+  font-size: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), 15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset 1px 1px 2px var(--bg-color);
+}
+
+.magnifyingGlasses {
+  color: #8ee80e;
+  position: relative;
+  top: 2px;
+  right: 35px;
+  cursor: pointer;
+}
+
+.lang p {
+  padding: 0.5rem;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+/* .theme-mode {
+  padding: 0.7rem;
+  border-radius: 30px;
+}
+.faMoon,
+.faSun {
+  color: #fefefe;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+} */
+
+.account {
+  padding: 0.5rem;
+  border-radius: 10%;
+}
+
+.faUser {
+  cursor: pointer;
+}

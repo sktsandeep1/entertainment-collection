@@ -1,4 +1,5 @@
-p {
+p,
+article {
   color: #fff;
 }
 
@@ -19,10 +20,13 @@ p {
 
 /* ----------------------------------------------------------------------- */
 
-.footer-container {
+.container {
+  padding: 2rem 2rem;
   background-color: var(--bg-color);
+  position: relative;
+  bottom: 0;
 }
-
+/* ----------------------------------------------------------------------- */
 .sub-footer-1 {
   width: 90%;
   margin: auto;
@@ -37,6 +41,7 @@ p {
   cursor: pointer;
   font-size: 2.5rem;
 }
+
 .footer-logo {
   font-size: 2.5rem;
   font-weight: 700;
@@ -45,21 +50,48 @@ p {
   background-clip: text;
   color: transparent;
 }
-
+/* ----------------------------------------------------------------------- */
 .sub-footer-2 {
   width: 90%;
   margin: 1rem auto 2rem auto;
+  display: flex;
+  gap: 1rem;
+}
+.footerItem {
   display: grid;
-  grid-template-areas: "1 2 3 4";
-  justify-content: space-around;
+  grid-template-areas: "1 2 3";
+  gap: 3rem;
+  width: 60%;
+  margin: auto;
+  padding: 1rem;
 }
 
 .sub-footer-2 p {
   font-size: 1.3rem;
   cursor: pointer;
+  display: inline;
 }
 
+.sub-footer-2 p:hover {
+  color: #188b09;
+}
+/* -------------------------------------------- */
+
+.websiteDetails {
+  width: 40%;
+  margin: auto;
+  padding: 2rem;
+  line-height: 1.5;
+}
+
+.websiteDetails h1 {
+  font-size: 3.5rem;
+  text-align: left;
+  color: #b5b8b5;
+}
+/* -------------------------------------------- */
 .bottom-footer {
+  width: 100%;
   height: 2rem;
   background-color: black;
   display: flex;
@@ -82,13 +114,14 @@ p {
 
 .close-popup {
   position: absolute;
-  top: 20px;
-  right: 25px;
+  top: 30px;
+  right: 40px;
   padding: 1rem;
   cursor: pointer;
   border: none;
   border-radius: 10px;
 }
+
 .popup {
   height: 100vh;
   width: 100vw;
@@ -101,7 +134,7 @@ p {
   transform: translate(-50%, -50%);
   line-height: 1.4;
   background: #8adba2;
-  padding: 14px 28px;
+  padding: 2rem;
   background: rgba(116, 190, 116, 0.53);
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -113,3 +146,8 @@ p {
 .popupContent h1 {
   font-size: 3.5rem;
 }
+
+.popupContent article {
+  font-size: 1.3rem;
+}
+/* ----------------------------------------------------------------------- */
