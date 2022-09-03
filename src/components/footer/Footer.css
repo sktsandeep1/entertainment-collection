@@ -20,11 +20,12 @@ article {
 
 /* ----------------------------------------------------------------------- */
 
-.container {
+.footer-section {
   padding: 2rem 2rem;
   background-color: var(--bg-color);
   position: relative;
   bottom: 0;
+  margin-top: 0;
 }
 /* ----------------------------------------------------------------------- */
 .sub-footer-1 {

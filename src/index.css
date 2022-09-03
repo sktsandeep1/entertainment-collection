@@ -4,11 +4,8 @@
 }
 
 body {
-  background-image: url(../public/assets/background-image.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 2000px;
+  background-color: #011808;
+  /* height: 2000px; */
 }
 
 :root {
@@ -38,9 +35,9 @@ body {
   --font-size-4: 2.5rem; */
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .container {
   margin-top: 3.5rem;

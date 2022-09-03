@@ -8,12 +8,12 @@ import { FaUser } from "react-icons/fa";
 const Nav = () => {
   return (
     <>
-      <div className="Container">
+      <div className="Container navbar">
         <div className="nav-container">
           <div className="nav-logo">
-            <img src="/assets/EC-logo.png" alt="" />
+            <img src="/assets/EC-logo.png" alt="" className="nav-1-logo" />
           </div>
-          <div className="nav-items-1 otts-logo">
+          <div className="nav-items-1  otts-logo">
             <img
               src="/assets/netflix.jpeg"
               alt="netflix"

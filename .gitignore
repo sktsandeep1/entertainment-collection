@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+#Optimize Css
+#make var for colors
+# Need to make Responsive for all devices

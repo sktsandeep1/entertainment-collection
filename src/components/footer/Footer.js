@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container footer-section">
         <div className="sub-footer-1">
           <div className="socials">
             <FaFacebookF className="social-item" />
