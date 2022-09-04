@@ -30,12 +30,12 @@ const Footer = () => {
         </div>
 
         <div className="sub-footer-2">
-          <div className="footerItem">
+          <div className="footerItems">
             {FooterContent.map((footerContent, index) => {
               return (
                 <div key={index}>
                   <div onClick={() => togglePopup(footerContent.id)}>
-                    <p>{footerContent.title}</p>
+                    <p className="footerItem_1">{footerContent.title}</p>
                   </div>
 
                   {popup === footerContent.id && (
@@ -69,7 +69,7 @@ const Footer = () => {
             </article>
           </div>
         </div>
-      </div>{" "}
+      </div>
       <div className="bottom-footer">
         <p> All rights has been reserved</p>
       </div>

@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,34 +12,71 @@ body {
 :root {
   --bg-color: #00270c;
   --bg-color-1: #007524;
+  --bg-color-variant:#2c6c2c;
+  --color-primary: #6bff4d;
+  --color-primary-variant: rgba(107, 255, 77, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
 
-  /* 
-  color: #8ee80e;
-  background-color: #021102;
-  background-color: #000000;
-  background-color: #23dc71; */
+  --transition: all 400ms ease ease;
 
-  /* color: #32ea22;
-  color: #70ad22;
-  color: #95de98;
-  color: #98de87;
-  color: #afeeaa;
-  color: #c9f2c6;
-  color: #e0f0dd;
-  color: #ffff;
-    color: ;
-
-  --font-size: 0.5rem;
-  --font-size-1: 1rem;
-  --font-size-2: 1.5rem;
-  --font-size-3: 2rem;
-  --font-size-4: 2.5rem; */
+  --container-width-lg: 100%;
+  --container-width-md: 100%
+  --container-width-sm: 100%
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
-} */
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5
+{
+  font-weight: 500;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+p,
+article{
+  color: var(--color-white);
+  font-family: sans-serif;
+}
+
+
 
 .container {
-  margin-top: 3.5rem;
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
+/* ---------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+ 
+}
+
+/* ---------------------------------------------------------------------------- */
+/* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
+/* ---------------------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
 }

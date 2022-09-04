@@ -1,8 +1,3 @@
-p,
-article {
-  color: #fff;
-}
-
 .socials .social-item:nth-child(1) {
   color: #1877f2;
 }
@@ -33,64 +28,87 @@ article {
   margin: auto;
   display: flex;
   justify-content: space-between;
+
+  /* margin-bottom: 5rem; */
 }
 
 .socials {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   cursor: pointer;
-  font-size: 2.5rem;
+}
+
+.social-item {
+  font-size: 2rem;
+  border: 1px solid rgb(3, 85, 31);
+  background-image: linear-gradient(60deg, #000000, #003100, #000000);
+  height: 70px;
+  width: 80px;
+  border-radius: 30px 10px;
+  padding: 1rem;
+}
+.social-item:hover {
+  background: transparent;
+  /* background-image: linear-gradient(60deg, #272323, #033603, #222121); */
 }
 
 .footer-logo {
-  font-size: 2.5rem;
   font-weight: 700;
   font-family: "Alumni Sans Pinstripe", sans-serif;
   background-image: linear-gradient(60deg, #3d6600, #bfffbf, #3d6600);
   background-clip: text;
   color: transparent;
-}
-/* ----------------------------------------------------------------------- */
-.sub-footer-2 {
-  width: 90%;
-  margin: 1rem auto 2rem auto;
   display: flex;
-  gap: 1rem;
-}
-.footerItem {
-  display: grid;
-  grid-template-areas: "1 2 3";
-  gap: 3rem;
-  width: 60%;
-  margin: auto;
-  padding: 1rem;
+  align-items: center;
 }
 
-.sub-footer-2 p {
-  font-size: 1.3rem;
+.footer-logo > h1 {
+  font-size: 3.2rem;
+}
+/* ----------------------------------------------------------------------- */
+
+.sub-footer-2 {
+  display: flex;
+}
+.footerItems {
+  width: 50%;
+  display: grid;
+  grid-template-areas: "1 2 3";
+  justify-content: space-around;
+  gap: 1rem;
+  margin: auto;
+}
+.footerItem_1 {
+  text-align: left;
+  font-size: 1.2rem;
   cursor: pointer;
-  display: inline;
 }
 
 .sub-footer-2 p:hover {
   color: #188b09;
+  transition: var(--transition);
 }
-/* -------------------------------------------- */
+
+/* -------------------------------------------------------- */
 
 .websiteDetails {
-  width: 40%;
+  width: 50%;
   margin: auto;
   padding: 2rem;
   line-height: 1.5;
 }
 
 .websiteDetails h1 {
-  font-size: 3.5rem;
   text-align: left;
-  color: #b5b8b5;
+  color: #9fcf7e;
 }
-/* -------------------------------------------- */
+
+.websiteDetails article {
+  font-size: 1.2rem;
+}
+/* ---------------------------------------------------- */
+
 .bottom-footer {
   width: 100%;
   height: 2rem;
@@ -100,7 +118,7 @@ article {
   justify-content: center;
 }
 
-/* -------------------------------------------- */
+/* ------------------------------------------------------------ */
 
 .popup,
 .popupWindow {
@@ -124,8 +142,8 @@ article {
 }
 
 .popup {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 .popupContent {
@@ -152,3 +170,108 @@ article {
   font-size: 1.3rem;
 }
 /* ----------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------- */
+/* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
+/* ---------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1200px) {
+  .sub-footer-1 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* ------------------------------------- */
+  .sub-footer-2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footerItems {
+    width: 80%;
+    grid-template-areas: "1 2 3";
+    gap: 1.4rem;
+  }
+  .footerItem_1 {
+    text-align: left;
+  }
+  .websiteDetails {
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    line-height: 1.5;
+  }
+
+  .websiteDetails h1 {
+    text-align: left;
+    color: #9fcf7e;
+    font-size: 1.9rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------- */
+/* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
+/* ---------------------------------------------------------------------------- */
+
+@media screen and (max-width: 700px) {
+  .sub-footer-1 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .footer-logo > h1 {
+    font-size: 1.5rem;
+  }
+
+  .social-item {
+    height: 60px;
+    width: 65px;
+  }
+  /* ------------------------------------- */
+  .sub-footer-2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footerItems {
+    width: 100%;
+    grid-template-areas: "1 2";
+    gap: 1.4rem;
+  }
+
+  .websiteDetails {
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+    line-height: 1.5;
+  }
+
+  .websiteDetails h1 {
+    text-align: left;
+    font-size: 1.9rem;
+  }
+
+  /* ---------------------------------------- */
+
+  .popupContent {
+    line-height: 1.4;
+    padding: 10px 10px 10px 10px;
+  }
+  .popupContent > h1 {
+    font-size: 1.5rem;
+  }
+  .popupContent > article {
+    font-size: 1rem;
+  }
+  .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    border-radius: 15px;
+  }
+}
