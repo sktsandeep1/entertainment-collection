@@ -46,6 +46,7 @@ const Banner = () => {
             {truncate(movies?.overview, 200)}
           </h1>
           {/* buttons */}
+
           <div className="banner-items">
             <div className="banner_item-1">
               <div className="play_section">
@@ -69,6 +70,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
+      <div className="banner_fadeBottom"></div>
     </>
   );
 };

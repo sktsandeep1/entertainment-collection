@@ -36,7 +36,8 @@ h3,
 h4,
 h5
 {
-  font-weight: 500;
+  font-weight: 600;
+  font-family: sans-serif;
 }
 
 h1{
@@ -53,7 +54,7 @@ article{
 
 .container {
   width: var(--container-width-lg);
-  margin: 0 auto;
+  margin: 0rem auto;
 }
 
 
@@ -63,7 +64,7 @@ article{
 /* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
 /* ---------------------------------------------------------------------------- */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .container {
     width: var(--container-width-md);
   }
@@ -74,7 +75,7 @@ article{
 /* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
 /* ---------------------------------------------------------------------------- */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .container {
     width: var(--container-width-sm);
   }

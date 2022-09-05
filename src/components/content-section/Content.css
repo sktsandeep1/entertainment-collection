@@ -11,7 +11,6 @@ container {
 }
 
 .contents {
-  /* From https://css.glass */
   background: rgba(53, 82, 48, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(18, 68, 3, 0.1);
@@ -45,4 +44,9 @@ container {
   line-height: 1.5;
   padding-top: 1rem;
   height: 80px;
+}
+
+.content_fadeBottom {
+  height: 3rem;
+  background-image: linear-gradient(180deg, #011808, var(--bg-color));
 }
