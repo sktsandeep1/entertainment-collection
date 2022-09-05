@@ -37,3 +37,32 @@
   display: flex;
   gap: 2rem;
 }
+
+.btn_play,
+.btn_more_info {
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), 15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset 1px 1px 2px var(--bg-color);
+}
+.play_icon,
+.more_info_icon {
+  font-size: 1rem;
+  margin: 0 10px 0 10px;
+}
+.play,
+.more_info,
+.underAge p {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.underAge {
+  background-color: #3d6600;
+  padding: 0.5rem;
+  border-left: 10px solid black;
+  box-shadow: 5px 5px 5px rgba(148, 5, 5, 0.1),
+    15px 15px 15px rgba(134, 8, 8, 0.1), inset 1px 1px 2px rgb(28, 66, 2);
+}

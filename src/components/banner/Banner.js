@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Play from "../sub-components/Play";
-import MoreInfo from "../sub-components/MoreInfo";
-import UnderAge from "../sub-components/UnderAge";
 import axios from "../../axios";
 import requests from "../../Requests";
-import "./Banner.css";
-
 import { BiErrorAlt } from "react-icons/bi";
-
+import { FaPlay } from "react-icons/fa";
+import "./Banner.css";
 const Banner = () => {
   const [movies, setMovies] = useState([]);
 
@@ -52,11 +48,23 @@ const Banner = () => {
           {/* buttons */}
           <div className="banner-items">
             <div className="banner_item-1">
-              <Play />
-              <MoreInfo />
+              <div className="play_section">
+                <button className="btn_play">
+                  <FaPlay className="play_icon" />
+                  <span className="play">Play</span>
+                </button>
+              </div>
+              <div className="more_info_section">
+                <button className="btn_more_info">
+                  <BiErrorAlt className="more_info_icon" />
+                  <span className="more_info">More Info</span>
+                </button>
+              </div>
             </div>
             <div className="banner_item-2">
-              <UnderAge />
+              <div className="underAge">
+                <p>U/A 13+</p>
+              </div>
             </div>
           </div>
         </div>
