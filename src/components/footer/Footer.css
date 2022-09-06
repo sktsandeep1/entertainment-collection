@@ -72,6 +72,7 @@
 
 .sub-footer-2 {
   display: flex;
+  justify-content: space-around;
 }
 .footerItems {
   width: 50%;
@@ -85,9 +86,10 @@
   text-align: left;
   font-size: 1.2rem;
   cursor: pointer;
+  display: inline;
 }
 
-.sub-footer-2 p:hover {
+.footerItem_1:hover {
   color: #188b09;
   transition: var(--transition);
 }
@@ -179,7 +181,6 @@
 
 @media screen and (max-width: 1200px) {
   .sub-footer-1 {
-    display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
@@ -189,28 +190,26 @@
 
   /* ------------------------------------- */
   .sub-footer-2 {
-    display: flex;
     flex-direction: column-reverse;
   }
   .footerItems {
     width: 80%;
-    grid-template-areas: "1 2 3";
     gap: 1.4rem;
   }
   .footerItem_1 {
     text-align: left;
+    font-size: 15px;
   }
   .websiteDetails {
     width: 80%;
-    margin: auto;
     padding: 1rem;
-    line-height: 1.5;
   }
 
   .websiteDetails h1 {
-    text-align: left;
-    color: #9fcf7e;
-    font-size: 1.9rem;
+    font-size: 25px;
+  }
+  .websiteDetails article {
+    font-size: 15px;
   }
 }
 
@@ -219,13 +218,6 @@
 /* ---------------------------------------------------------------------------- */
 
 @media screen and (max-width: 700px) {
-  .sub-footer-1 {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-  }
   .footer-logo > h1 {
     font-size: 1.5rem;
   }
@@ -235,33 +227,25 @@
     width: 65px;
   }
   /* ------------------------------------- */
-  .sub-footer-2 {
-    display: flex;
-    flex-direction: column-reverse;
-  }
+
   .footerItems {
     width: 100%;
     grid-template-areas: "1 2";
-    gap: 1.4rem;
   }
-
   .websiteDetails {
     width: 100%;
     margin: auto;
-    padding: 1rem;
     line-height: 1.5;
   }
 
   .websiteDetails h1 {
     text-align: left;
-    font-size: 1.9rem;
   }
 
   /* ---------------------------------------- */
 
   .popupContent {
-    line-height: 1.4;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
   }
   .popupContent > h1 {
     font-size: 1.5rem;
@@ -270,7 +254,6 @@
     font-size: 1rem;
   }
   .close-popup {
-    position: absolute;
     top: 10px;
     right: 10px;
     padding: 5px;
