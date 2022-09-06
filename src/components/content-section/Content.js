@@ -23,7 +23,7 @@ const Content = () => {
       <div className="container ">
         <div className="content_container">
           {movies.map((movies) => {
-            const { id, title, backdrop_path } = movies;
+            const { id, backdrop_path } = movies;
             return (
               <div className="contents" key={id}>
                 <img
@@ -37,7 +37,7 @@ const Content = () => {
                     {movies?.title || movies?.name || movies?.original_title}
                   </h1>
                   <article className="content_description">
-                    {truncate(movies?.overview, 150)}
+                    {truncate(movies?.overview, 90)}
                   </article>
                 </div>
               </div>
