@@ -19,10 +19,18 @@ const Footer = () => {
       <div className="container footer-section">
         <div className="sub-footer-1">
           <div className="socials">
-            <FaFacebookF className="social-item" />
-            <FaTwitter className="social-item" />
-            <FaLinkedinIn className="social-item" />
-            <FaDiscord className="social-item" />
+            <a href="https://facebook.com" target="_blank">
+              <FaFacebookF className="social-item" />
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+              <FaTwitter className="social-item" />
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <FaLinkedinIn className="social-item" />
+            </a>
+            <a href="https://discord.com/" target="_blank">
+              <FaDiscord className="social-item" />
+            </a>
           </div>
           <div className="footer-logo">
             <h1>Entertainment Collection</h1>
