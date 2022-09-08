@@ -1,0 +1,58 @@
+.triangle-down-icon {
+  color: #fff;
+}
+.dropdown {
+  position: relative;
+  display: none;
+}
+.dropdown-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+.dropdown-btn p {
+  padding-right: 10px;
+}
+.dropdown .dropdown-content {
+  position: absolute;
+  top: 200%;
+  left: -50%;
+  padding: 10px;
+  background: rgba(221, 235, 218, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(18, 68, 3, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(5, 65, 8, 0.3);
+  color: black;
+  font-weight: bold;
+}
+.dropdown-item {
+  width: 200px;
+}
+.dropdown-item p {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.dropdown-item p:hover {
+  background-color: #188b09;
+  border-radius: 5px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
+/* ---------------------------------------------------------------------------- */
+@media screen and (max-width: 700px) {
+  .dropdown {
+    display: initial;
+  }
+  .dropdown-btn {
+    font-size: 15px;
+  }
+}

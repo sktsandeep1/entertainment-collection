@@ -1,18 +1,22 @@
-import React from "react";
+import { useState } from "react";
 import "./Nav.css";
-import { FaSearch } from "react-icons/fa";
-import { FaMoon } from "react-icons/fa";
-import { FaSun } from "react-icons/fa";
+// import { FaSearch } from "react-icons/fa";
+// import { FaMoon } from "react-icons/fa";
+// import { FaSun } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
+import DropdownMenu from "./nav-component/DropdownMenu";
 
 const Nav = () => {
+  const [selected, setSelected] = useState("Browse");
   return (
     <>
-      <div className="Container navbar">
+      <div className="container navbar">
         <div className="nav-container">
+          {/* ------------------------------------------------------------------------ */}
           <div className="nav-logo">
             <img src="/assets/EC-logo.png" alt="" className="nav-1-logo" />
           </div>
+          {/* ------------------------------------------------------------------------ */}
           <div className="nav-items-1  otts-logo">
             <img
               src="/assets/netflix.jpeg"
@@ -32,22 +36,21 @@ const Nav = () => {
               className="nav-1-logo"
             />
           </div>
-
-          <div className="nav-items-2">
-            <p class="nav-link">Popular</p>
-            <p class="nav-link">Airing Today</p>
-            <p class="nav-link">On Tv</p>
-            <p class="nav-link">Top Rated</p>
-          </div>
-
+          {/* ------------------------------------------------------------------------ */}
+          <DropdownMenu
+            selected={selected}
+            setSelected={setSelected}
+            className="dropDownMenu"
+          />
+          {/* ------------------------------------------------------------------------ */}
           <div className="navSub">
-            <div className="searchBar">
+            {/* <div className="searchBar">
               <input type="text" placeholder="Search any you want..." />
               <FaSearch className="magnifyingGlasses" />
-            </div>
-            <div className="lang">
+            </div> */}
+            {/* <div className="lang">
               <p>EN</p>
-            </div>
+            </div> */}
             {/* <div className="theme-mode">
               <FaMoon className="faMoon" />
               <FaSun className="faSun" />
