@@ -18,8 +18,8 @@
 }
 .dropdown .dropdown-content {
   position: absolute;
-  top: 200%;
-  left: -50%;
+  top: 240%;
+  left: -85%;
   padding: 10px;
   background: rgba(221, 235, 218, 0.2);
   border-radius: 5px;
@@ -38,11 +38,13 @@
   padding: 10px;
   cursor: pointer;
   transition: var(--transition);
+  color: #000;
 }
 
 .dropdown-item p:hover {
   background-color: #188b09;
   border-radius: 5px;
+  color: #000;
 }
 
 /* ---------------------------------------------------------------------------- */
