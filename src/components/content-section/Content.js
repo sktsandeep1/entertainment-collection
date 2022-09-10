@@ -1,18 +1,42 @@
 import React, { useEffect, useState } from "react";
 import axios from "../../axios";
 import requests from "../../Requests";
+// import YouTube from "react-youtube";
+// import movieTrailer from "movie-trailer";
 import "./Content.css";
 const Content = () => {
   const [movies, setMovies] = useState([]);
+  // const [trailerUrl, setTrailerUrl] = useState();
 
   const moviesData = async () => {
-    const request = await axios.get(requests.fetchNetflixOriginals);
+    const request = await axios.get(requests.fetchTrending);
     setMovies(request.data.results);
   };
 
   useEffect(() => {
     moviesData();
   });
+
+  // const opts = {
+  //   height: "390",
+  //   width: "100%",
+  //   playerVars: {
+  //     autoplay: 1,
+  //   },
+  // };
+
+  // const handleClick = (movie) => {
+  //   if (trailerUrl) {
+  //     setTrailerUrl("");
+  //   } else {
+  //     movieTrailer(movie?.name || "")
+  //       .then((url) => {
+  //         const urlParams = new URLSearchParams(new URL(url).search);
+  //         setTrailerUrl(urlParams.get("v"));
+  //       })
+  //       .catch((error) => console.log(error));
+  //   }
+  // };
 
   const truncate = (str, n) => {
     return str?.length > n ? str.substr(0, n - 1) + "" : str;
@@ -25,7 +49,11 @@ const Content = () => {
           {movies.map((movies) => {
             const { id, backdrop_path } = movies;
             return (
-              <div className="contents" key={id}>
+              <div
+                className="contents"
+                // onClick={() => handleClick(movies)}
+                key={id}
+              >
                 <img
                   src={"https://image.tmdb.org/t/p/w500/" + backdrop_path}
                   alt="poster"
@@ -44,6 +72,7 @@ const Content = () => {
             );
           })}
         </div>
+        {/* <YouTube videoId={trailerUrl} opts={opts} /> */}
       </div>
       <div className="content_fadeBottom"></div>
     </>
