@@ -12,7 +12,7 @@ body {
 :root {
   --bg-color: #00270c;
   --bg-color-1: #007524;
-  --bg-color-variant:#2c6c2c;
+  --bg-color-variant: #2c6c2c;
   --color-primary: #6bff4d;
   --color-primary-variant: rgba(107, 255, 77, 0.4);
   --color-white: #fff;
@@ -21,44 +21,37 @@ body {
   --transition: all 400ms ease;
 
   --container-width-lg: 100%;
-  --container-width-md: 100%
-  --container-width-sm: 100%
+  --container-width-md: 100%;
+  --container-width-sm: 100%;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
-
 h1,
 h2,
 h3,
 h4,
-h5
-{
+h5 {
   font-weight: 600;
   font-family: sans-serif;
 }
 
-h1{
+h1 {
   font-size: 2.5rem;
 }
 
 p,
-article{
+article {
   color: var(--color-white);
   font-family: sans-serif;
 }
-
-
 
 .container {
   width: var(--container-width-lg);
   margin: 0rem auto;
 }
-
-
-
 
 /* ---------------------------------------------------------------------------- */
 /* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
@@ -68,7 +61,6 @@ article{
   .container {
     width: var(--container-width-md);
   }
- 
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -79,5 +71,4 @@ article{
   .container {
     width: var(--container-width-sm);
   }
-
 }
